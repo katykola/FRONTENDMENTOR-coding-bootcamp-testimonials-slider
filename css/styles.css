@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: hsl(240, 38%, 20%);
+  font-weight: 300;
+}
+
+@media screen and (min-width: 378px) {
+  body {
+    font-size: 32px;
+  }
+}
+.container {
+  height: 100vh;
+  padding: 1.5rem;
+  background-image: url(/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 80%;
+}
+
+@media screen and (min-width: 378px) {
+  .container {
+    background-size: 40%;
+  }
+}
+.slide__img {
+  width: 80%;
+}
+
+@media screen and (min-width: 378px) {
+  .slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.slideimg {
+  position: relative;
+}
+.slideimg__bg {
+  width: 100%;
+  background-image: url(/images/pattern-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slideimg__photo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 378px) {
+  .slideimg {
+    grid-column: 2/3;
+  }
+}
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: white;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+}
+.slider-controls__icon:first-of-type {
+  padding-right: 1.7rem;
+}
+
+.quote {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-image: url(/images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  background-position: top center;
+}
+.quote__author {
+  font-size: 1rem;
+}
+.quote__name {
+  margin: 0;
+  font-weight: 700;
+}
+.quote__jobposition {
+  margin: 0;
+  font-weight: 500;
+  color: hsl(240, 18%, 77%);
+}
+
+@media screen and (min-width: 378px) {
+  .quote {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}/*# sourceMappingURL=styles.css.map */
